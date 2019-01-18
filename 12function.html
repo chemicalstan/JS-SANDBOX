@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funtions</title>
+</head>
+<body>
+    <script>
+        // functon Declaration 
+        function greet(firstName = 'Paul', lastName = 'Alan'){
+            return 'Hello ' + firstName + ' ' + lastName;
+        }
+        console.log(greet());
+
+        // string functions
+        const winner = function(winner = ''){
+            return `And the winner is ${winner}`;
+        }
+        
+        console.log(winner('Stanley'));
+
+        // Immidiately Invokable Function Expressions - IIFE's
+            // These are functions that are called immediately after
+            // they are declared. Hence they are like constructor
+            // methods in classes
+
+        (function(name = ''){
+            return console.log(`${name} is the boss`);
+        })('Stanley');
+
+        // Methods and Properties
+        const val = {
+            developer: function (name = ''){
+                return `The best developer in Nigeria is ${name}`;
+            },
+            double: function (x = ''){
+                return x*2;
+            },
+
+        };
+        
+        val.delete = function(id = ''){
+            return 'number ' + id + ' has been deleted';
+        };
+        console.log(val.double(1));
+        console.log(val.developer('Chemicalstan'));
+        console.log(val.delete(2));
+
+    </script>
+</body>
+</html>

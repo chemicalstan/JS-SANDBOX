@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>General Loops</title>
+</head>
+<body>
+    <script>
+        // FOR LOOP
+        // for(let i = 0; i <= 10; i++){
+        //     if (i === 2){
+        //         console.log('my favourite number is 2');
+        //         continue;
+        //     }
+
+        //     if(i === 5){
+        //         console.log('This loop ends at 5');
+        //         break;
+        //     }
+        //     console.log(i);
+        // } 
+
+        // WHILE LOOP
+        // index = 0;
+        // while(index < 10){
+        //     console.log(index);
+        //     index++;
+        // }
+
+        // DO WHILE LOOP
+        // index = 0;
+        // do{
+        //     console.log(index);
+        //     index ++;
+        // }
+        // while(index < 11);
+        
+        // FOREACH LOOP
+        // const cars = ['Honda', 'Toyota', 'Chevy', 'Mustang'];
+        // cars.forEach(function(car, index, array){
+        //     console.log(`${index}: ${car} : ${array}`);
+        // });
+
+        //FOR IN LOOP
+            // Basically, the for in loop is used to iterate through
+            // object literals instead of arrays
+        const user = {
+            firstName: 'John',
+            lastName: 'Doe',
+            age: 21, 
+            job: 'Web Developer'
+        }
+
+        for(let x in user){
+            console.log(`${x}: ${user[x]}`);
+        }
+
+        // MAP LOOP
+            // Basically, the map loop is used to iterate through object
+            // literals that are within an array
+        // Thus, this type of loop is basically used to create specific
+        // arrays from an array containing groups of object contain
+        // sximilar type of datas
+        
+        const people = [
+            {name: 'solomon', age: 21},
+            {name: 'prono', age:22},
+            {name: 'chemicalstan', age:21}
+        ];
+        
+        const names = people.map(function(person){
+            return person.name;
+        }); 
+        const ages = people.map(function(person){
+            return person.age;
+        });
+
+        console.log(names);
+        console.log(ages);
+        
+    </script>
+</body>
+</html>

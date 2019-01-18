@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Switch Statement</title>
+</head>
+<body>
+    <script>
+        const color = 'purple';
+        let val;
+        switch(color){
+            case 'red':
+                val = 'The color is red';
+                break;
+            case 'yellow':
+                val = 'The color is yellow';
+                break;
+            case 'black':
+                val = 'the color is black';
+                break;
+            default:
+                val = 'The color is neither red, yellow or black';
+                break;
+        }
+        
+        const today = new Date();
+        let birthday = new Date('12/15/1997');
+        let day;
+        switch(today.getDay()){
+            case 0: 
+                day = 'Sunday';
+            case 1:
+                day = 'Monday';
+                break;
+            case 2:
+                day = 'Tuesday';
+                break;
+            case 3: 
+                day = 'Wednesday';
+                break;
+            case 4: 
+                day = 'Thursday';
+                break;
+            case 5:
+                day = 'Friday';
+                break;
+            case 6: 
+                day = 'Saturday';
+                break;
+        }
+        console.log(`Today is ${day}`);
+
+
+
+
+
+    </script>
+</body>
+</html>

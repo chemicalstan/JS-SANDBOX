@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>string methods</title>
+</head>
+<body>
+    <script>
+        // inputs
+    const firstName = 'stanley';
+    const lastName = 'okonkwo';
+    const age = 21;
+    const str = "Hi guys, i'm a geek and I know too many things";
+    let val;
+
+        // concatenation
+    val = firstName + ' ' + lastName;
+    val = firstName.concat(' ', lastName.toUpperCase());
+
+        // string conversion
+    val = firstName.toUpperCase();
+    val = lastName.length;
+    val = lastName.toLocaleLowerCase();
+        // to split a sentence at the specified point
+    val = str.split(' ');
+        // location
+    val = lastName.indexOf('n');
+    val = lastName.lastIndexOf('o');
+    val = firstName.charAt('2');
+    val = str.slice(-9);
+    val = str.substring(0, 2);
+    val = str.replace('Hi', 'Hello');
+    val = firstName[2];
+    val = str.includes('Hi');
+                   
+    console.log(val);
+    </script>
+</body>
+</html>

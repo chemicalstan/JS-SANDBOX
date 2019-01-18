@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Template Strings/Literals</title>
+</head>
+<body>
+    <script>
+        const name = 'stanley';
+        const age = 21;
+        const city = 'Lagos';
+        const job = 'Web Developer';
+        let html;
+        
+        // Without templating strings or literals
+        html = "<ul>" +
+                "<li>Name: " + name + "</li>" +
+                "<li>Age: " + age + "</li>" +
+                "<li>City: " + city + "</li>" +
+                "<li>Job: " + job + "</li>" +
+               "</ul>";
+
+        // With templating literals
+        html = `<ul>
+                    <li>Name: ${name}</li>
+                    <li>Age: ${age}</li>
+                    <li>City: ${city}</li>
+                    <li>Job: ${job}</li>
+                    <li>${age > 18 ? 'he\'s an adult' : 'he\'s a teenager.'}</li>
+                </ul>`;
+
+
+        // document.body.innerHTML = html;
+        document.write(html);
+
+
+    </script>
+    
+</body>
+</html>

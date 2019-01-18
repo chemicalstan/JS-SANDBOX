@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Block Level Scope</title>
+</head>
+<body>
+    <script>
+        // Scope has to do with the security level a variable posseses depending
+        // on the method of it's declaration.
+
+        // Global Scope
+        var a = 1;
+        let b = 2;
+        const c = 3;
+        console.log('Initial Global Scope: ' + a,b,c);
+        function test(){
+            // Function Scope
+            var a = 4;
+            let b = 5;
+            const c  = 6
+            console.log('Function Scope: ' + a,b,c)
+        }
+        test();
+        
+
+        while(true){
+            // Block Level Scope
+            var a = 7;
+            let b = 8;
+            const c = 9;
+            console.log('Block Level Scope: '+a,b,c);
+            break;
+        }
+
+        console.log('Final Global Scope: '+a,b,c);
+            // Thus, let and const has a block level scope while
+            // var has only a function scope. Meaning that let and 
+            // const global variables can with stand changes in block
+            // statements like if and while statement and functions 
+            // while var can only withstand changes in function
+    </script>
+</body>
+</html>

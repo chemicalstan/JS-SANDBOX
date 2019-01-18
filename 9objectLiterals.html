@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object Literals</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name: 'Stanley',
+            age: 21,
+            job: 'Web Developer',
+            hobbies: ['video game', 'soccer'],
+            birthYear: function (){
+                return 2018 - this.age;
+            },
+            people: [
+            {name:'john', age:29},
+            {name:'philip', age:34},
+            {name:'nancy', age:19},
+            {name:21, age:'sulaiman'}
+        ],
+        
+        }
+        let val;
+        val = person.birthYear();
+        
+        
+        for (let i = 0; i < person.people.length; i++) {
+            const val = person.people[i].name;
+            console.log(val);
+        }
+        
+        console.log(val);
+    
+    </script>
+</body>
+</html>

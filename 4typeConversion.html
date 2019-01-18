@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Types conversion</title>
+</head>
+<body>
+    <script>
+// TYPE CONVERSION
+    let value;
+    //string To number 
+    value = Number('5');
+    // array to number
+    value = Number([1,2,3,4]);    //NaN
+    // bool to number
+    value = Number(true);
+    value = Number(null);
+// To string
+    value = String(5);
+    value = String(true);
+    value = String([1,2,3,4,5])
+    value = String(new Date());
+
+// OUTPUT
+    // console.log(value);
+    // console.log(typeof value);
+    // console.log(value.length);
+    // console.log(value.toFixed(2));
+
+
+// TYPE COATION
+    // This involves trying join two different data types
+    let val1 = 4;
+    let val2 = '3';
+
+    val = val1 + val2;
+
+    console.log(val);
+    console.log(typeof val);
+
+    </script>
+</body>
+</html>

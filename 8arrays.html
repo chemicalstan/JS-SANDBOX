@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Template Strings/Literals</title>
+</head>
+<body>
+    <script>
+        const number = [21, 23, 32,3,4,2,54,22,4];
+        const number2 = [21,65,545,32,3,43];
+        const fruits = ['apple', 'mango', 'strawberry', 'pineapple', 'banana'];
+    
+        let val;
+        // Array length
+        val = number.length;
+        //add to array end
+        number.push(21);
+        // check if array
+        val = Array.isArray(number);
+        // Add to array begining
+        number.unshift(36);
+        // Remove from array begining
+        number.shift();
+        // remove from array end
+        number.pop();
+        // merge arrays
+        val = number.concat(fruits);
+        // Alphabetical array sorting
+        val = fruits.sort();
+        // Sort numbers
+        number.sort(function (x, y){
+            return x - y; //ascending
+            // return y - x; //descending
+        });
+        // reverse array
+        val = fruits.reverse();
+        // splice array
+        number.splice(1,2);
+        
+        // Find
+        function under50(num){
+            return num < 50;
+        }
+        val = number.find(under50);
+
+        
+        console.log(number);
+        console.log(val);   
+    </script>
+    
+</body>
+</html>
