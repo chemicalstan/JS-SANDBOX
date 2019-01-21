@@ -11,8 +11,6 @@ function Person (name, dob){
         // gets the fullyear of the above Date, and removes 1970 to get the actual diff
         const age = ageDate.getUTCFullYear() - 1970;
         return Math.abs(age);
-
-    
     }
     // console.log(this);
 }
