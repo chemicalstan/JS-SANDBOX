@@ -49,6 +49,6 @@ function Person (firstname, lastname, dob){
     Person.prototype.alive = 'Yes';
 
     const Stanley = new Person('Stanley', 'Okonkwo', '12-15-97');
-    const Rejoice = new Person('Rejoice', 'Chika', 'March 23, 2000');
+    const Rejoice = new Person('Rejoice', 'Alex', 'May 26, 1999');
     Rejoice.getsMarried('Okonkwo');
     console.log(Stanley.alive);
