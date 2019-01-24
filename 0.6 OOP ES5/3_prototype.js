@@ -1,4 +1,6 @@
-    // When dealing with objects literal, it's prototype is inherited from
+// A PROTOTYPE DENOTES AN OBJECT'S PARENT. THUS, EVERY OBJECT AND CONSTRUCTOR
+    // HAS A parent(PROTOTYPE)
+// When dealing with objects literal, it's prototype is inherited from
 // Object.prototype
             // while
     // When dealing with objects created through a constructor, it's prototype is
@@ -26,7 +28,7 @@ function Person (firstname, lastname, dob){
 
 // Calculate Age
     // This pushes the calculate age method to the person constructor
-    // Thus attaching it directly to the constructor in stead of the individual
+    // Thus attaching it directly to the constructor instead of the individual
     // methods
     Person.prototype.calculateAge = function(){
         //  current time  // converts bday to time format
