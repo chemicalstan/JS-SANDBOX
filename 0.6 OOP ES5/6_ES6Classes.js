@@ -1,6 +1,6 @@
-// SYTACTIC SUGAR
+// SYNTACTIC SUGAR
     // This denotes a change in the sytax of something with out
-    // changing how it works under the hood
+    // changing how it works under the hood.
 class Person{
     constructor(firstname, lastname, dob){
         this.firstname = firstname;
@@ -22,6 +22,8 @@ class Person{
         this.lastname = newLastname;
     }
     // STATIC METHODS
+    // This methods can be used without really instanciating a
+    // new object
     static addNumbers(x, y){
         return x + y;
     }
