@@ -52,7 +52,7 @@
     //GETTING NEXT SIBLING
     val = listItem.nextSibling; //this returns plus text
     val = listItem.nextElementSibling.nextElementSibling; //This returns the next element
-    // GETTING THE PREVIOUS SIBLING
+    // GETTING THE PREVIOUS SIBLING GOING BACK
     val = listItem.previousSibling;
     val = listItem.previousElementSibling; //This is null because we are dealing with the first element
 

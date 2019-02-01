@@ -66,9 +66,13 @@ function displayError(error){
     // clear Error after some seconds
                     // function, Time in millisecs
     window.setTimeout(clearError, 3000);
+    // NB:: THE clearError type of function above is thesame as the
+    // type used in addEventListener() methods, Hence it does not contain
+    // parenthesis
+    
 }  // End display Error
 
-
+// Clear Error Function
 function clearError(){
         const errorDiv = document.querySelector('.alert-danger');
         errorDiv.remove();

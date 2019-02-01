@@ -1,9 +1,14 @@
 // Game Values
 let min = 1,
     max = 10,
-    winningNum = 2,
+    winningNum = getRandomNum(max, min),
     guessesLeft = 3;
 
+console.log(winningNum);
+// Create winningNum
+function getRandomNum(max, min){
+    return Math.round(Math.random() * (max - min) + min);
+}
 // Game Elements
 const game = document.getElementById('game'),
       maxNum = document.querySelector('.max-num'),
