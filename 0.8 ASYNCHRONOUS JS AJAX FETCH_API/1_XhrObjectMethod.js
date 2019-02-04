@@ -19,7 +19,8 @@ function loadData(){
     // Ready state:: This is an alternative to onload [OBSOLATE]
     xhr.onreadystatechange = function (){
         if (this.status === 200 && this.readyState === 4) {
-            console.log(this.responseText);
+            // console.log(this.responseText);
+            document.getElementById('output').innerHTML = `<h1>${this.responseText}</h1>`;
         }
 
         // console.log(this.readyState, this.status, this.responseText)
