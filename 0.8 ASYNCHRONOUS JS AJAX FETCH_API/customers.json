@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "company": "123 Design",
+        "phone": "444-555-6666"
+    },
+    {
+        "id": 2,
+        "name": "Steve Smith",
+        "company": "Konga",
+        "phone": "484-555-6683"
+    },
+    {
+        "id": 3,
+        "name": "Chigozie Cyril",
+        "company": "AliExpress",
+        "phone": "244-389-9366"
+    },
+    {
+        "id": 4,
+        "name": "Stanley Okonkwo",
+        "company": "Apple",
+        "phone": "221-455-9986"
+    }
+]
