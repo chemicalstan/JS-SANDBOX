@@ -14,10 +14,14 @@ function Person (name, dob){
     }
     // console.log(this);
 }
+
+Person.motor = function(){
+    this.class = 'Benz';
+}
 // CONSTRUCTOR OBJECTS
 const stanley = new Person('Stanley', '12/15/1997');
 const john = new Person('John', '12/24/1996');
-console.log(stanley.calculateAge());
+console.log(stanley);
 console.log(john.calculateAge());
 
 // TESTING
