@@ -29,7 +29,8 @@ function getPosts(){
     }, 1000);
 }
 
-createPost({title:'The new Post', body:'This is the new post'}).then(getPosts)
-.catch((err) => {
-    console.log(err);
-});
+createPost({title:'The new Post', body:'This is the new post'})
+    .then(getPosts)
+        .catch((err) => {
+            console.log(err);
+            });
