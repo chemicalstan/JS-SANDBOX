@@ -3,16 +3,9 @@ document.getElementById('button1').addEventListener('click', getText);
 
 function getText(){
     fetch('test.txt')
-        .then(function (res){
-            return res.text();
-            })
-            .then(function(data){
-                document.querySelector('.output').innerHTML = data;
-                // console.log(data);
-                })
-                .catch(function(err){
-                    console.log(err);
-                    });
+        .then(res => res.text())
+            .then(data => document.querySelector('.output').innerHTML = data)
+                .catch(err => console.log(err));
 }
 
 // GET JSON DATA USING FETCH API METHOD
@@ -20,12 +13,8 @@ document.getElementById('button2').addEventListener('click', getJson);
 
 function getJson(){
     fetch('users.json')
-        .then(function(res){
-            if (res.status === 200) {
-                return res.json();
-            }
-        })
-            .then(function(users){
+        .then(res =>res.status === 200?res.json():'')
+            .then(users=>{
                 let output = '';
                 users.forEach(function(user){
                     output +=   `<li>${user.name}</li>`;
