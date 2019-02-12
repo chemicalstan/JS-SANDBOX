@@ -16,7 +16,7 @@ function getJson(){
         .then(res =>res.status === 200?res.json():'')
             .then(users=>{
                 let output = '';
-                users.forEach(function(user){
+                users.forEach(user=>{
                     output +=   `<li>${user.name}</li>`;
                     output +=   `<li>${user.username}</li>`;
                     output +=   `<li>${user.age}</li>`;
@@ -24,9 +24,7 @@ function getJson(){
                 });
                 document.querySelector('.output').innerHTML = output;
             })
-                .catch(function(err){
-                    console.log(err);
-                })
+                .catch(err => console.log(err))
 }
 
 // GET EXTERNAL API DATA USING FETCH API METHOD
@@ -34,19 +32,11 @@ document.getElementById('button3').addEventListener('click', getExternal);
 
 function getExternal(){
     fetch('https://api.github.com/users')
-        .then(function(res){
-            if (res.status === 200) {
-                return res.json();
-            }
-        })
-            .then(function(users){
+        .then(res => res.status === 200?res.json():'')
+            .then(users => {
                 let output = '';
-                users.forEach(function(user){
-                    output +=   `<li>${user.login}</li>`;
-                });
+                users.forEach(user => output +=   `<li>${user.login}</li>`);
                 document.querySelector('.output').innerHTML = output;
             })
-                .catch(function(err){
-                    document.querySelector('.output').innerHTML = `${err}, Please Check Your Internet Connection!`;
-                })
+                .catch(err => document.querySelector('.output').innerHTML = `${err}, Please Check Your Internet Connection!`)
 }
