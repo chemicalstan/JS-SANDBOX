@@ -16,7 +16,7 @@ function getJson(){
         .then(res =>res.status === 200?res.json():'')
             .then(users=>{
                 let output = '';
-                users.forEach(user=>{
+                users.forEach(user => {
                     output +=   `<li>${user.name}</li>`;
                     output +=   `<li>${user.username}</li>`;
                     output +=   `<li>${user.age}</li>`;
