@@ -1,15 +1,18 @@
 [
     {
+    "id": 1,
     "name":"Stanley",
     "username":"chemicalStan",
     "age":21
     }, 
     {
+        "id": 2,
         "name":"Samuel",
         "username":"Etana1",
         "age":22
     },
     {
+        "id": 3,
         "name":"Rejoice",
         "username":"Rejoice2",
         "age":19
