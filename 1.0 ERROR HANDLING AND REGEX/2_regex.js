@@ -16,7 +16,7 @@ re = /hello/i;
 // console.log(re.source);
     
     // exec() - This returns a array with the index at which the regex's 
-    // source matches or null when the source is not found within the
+    // source matches or null when the source is not found within the input
 // const result = re.exec('Okay, hello mister Stanley');
 // console.log(result); // This returns the array
 // console.log(result[0]); // This returns the regex source in the result
